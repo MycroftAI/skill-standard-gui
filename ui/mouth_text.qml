@@ -8,7 +8,7 @@ import Mycroft 1.0 as Mycroft
 
 Mycroft.ProportionalDelegate {
     id: simpleGuiRoot
-    skillBackgroundSource: "#000"
+    skillBackgroundColorOverlay: "#000000"
     
     Mycroft.AutoFitLabel {
         id: simpleTextType
