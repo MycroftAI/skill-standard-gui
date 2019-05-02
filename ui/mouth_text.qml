@@ -13,7 +13,7 @@ Mycroft.ProportionalDelegate {
     Mycroft.AutoFitLabel {
         id: simpleTextType
         Layout.fillWidth: true
-        Layout.preferredHeight: proportionalGridUnit * 40
+        Layout.preferredHeight: proportionalGridUnit * 30
         wrapMode: Text.Wrap
         font.family: "Noto Sans"
         font.weight: Font.Bold
