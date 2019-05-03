@@ -6,12 +6,17 @@ import org.kde.kirigami 2.4 as Kirigami
 
 import Mycroft 1.0 as Mycroft
 
-Mycroft.Delegate {
-    Label {
-        anchors.fill: parent
-        text: sessionData.message_text
-        horizontalAlignment: Text.AlignHCenter
-        verticalAlignment: Text.AlignVCenter
+Mycroft.ProportionalDelegate {
+    id: simpleGuiRoot
+    skillBackgroundColorOverlay: "#000000"
+    
+    Mycroft.AutoFitLabel {
+        id: simpleTextType
+        Layout.fillWidth: true
+        Layout.preferredHeight: proportionalGridUnit * 30
+        wrapMode: Text.Wrap
         font.family: "Noto Sans"
+        font.weight: Font.Bold
+        text: sessionData.message_text
     }
 }
